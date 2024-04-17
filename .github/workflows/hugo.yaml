@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.84.2
+      HUGO_VERSION: 0.124.1
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2   
@@ -40,7 +40,7 @@ jobs:
         run: npm i
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: install hugo 
+      - name: install hugo --channel=1.24.1/stable --classic
         run : sudo snap install hugo
       - name: download dependency
         run : ./scripts/sync-data.sh
