@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.124.0
+      HUGO_VERSION: 0.84.2
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2   
