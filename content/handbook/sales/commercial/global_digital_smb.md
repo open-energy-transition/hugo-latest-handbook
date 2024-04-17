@@ -107,7 +107,9 @@ The case logic, context behind the case, and CTA can be viewed on the Case Trigg
 
 If a GitLab team member needs to loop in the Advocate team on a customer Account, they must create a case.  (Chatter messages sent to the AMER/ APAC/ EMEA Sales Users are not monitored).  
 
-- Navigate to the *Account* in Salesforce.
+[Case Creation How-to Video](https://drive.google.com/file/d/1cExv6WlzM4RBkOBDJlSWG56o5BsRGnns/view?usp=drive_link)
+
+- Navigate to the end user *Account* in Salesforce.
 - Hover over *Cases*, and select *New Case*.
 - Select *SMB Sales Case*, from the Record Type dropdown.
 - Add the *Contact*, to the Contact Name lookup field. (A Lead can also be added, instead of a Contact, however in this scenario, the Account the Lead is matched to must also be manually added to the case.  To find the matched account, view the *Traction Complete Leads: Account* field)
@@ -125,7 +127,7 @@ If a GitLab team member needs to loop in the Advocate team on a customer Account
 - Select a *Case Reason* based on the customers needs.
 - **Check the *Assign using active assignment rules* checkbox, and click *Save*.If this is not done, the case will not enter the SMB Team queue, and will not be actioned**
 - This Case will now drop into the SMB Sales Queue, and will be actioned by a SMB Advocate.
-- Note: if an open SMB Case already exists on the account, do not check the *Assign using active assignment rules* box.  Instead, once you have saved the case, change the *Case Owner* to whoever owns the current open case on the account. 
+- Note: if an open SMB Case already exists on the account, do not check the *Assign using active assignment rules* box.  Instead, once you have saved the case, change the *Case Owner* to whoever owns the current open case on the account, and send them a chatter message on the case.
 - If a case has not been actioned as per the stated SLA, please chatter the regions [ASM](https://gitlab.my.salesforce.com/00OPL000000rpxF2AQ) on the case to escalate. 
 
 ## Tracking Cases you have created
