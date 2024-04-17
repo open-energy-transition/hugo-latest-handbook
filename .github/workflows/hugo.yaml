@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.124.1
+      HUGO_VERSION: 0.125.0
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2   
@@ -40,12 +40,14 @@ jobs:
         run: npm i
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: Install Hugo
-        run: sudo snap install hugo --channel=${{ env.HUGO_VERSION }}/stable --classic
+      # - name: Install Hugo
+      #   run: sudo snap install hugo
       - name: download dependency
         run : ./scripts/sync-data.sh
-      - name : use hugo 
-        run : hugo 
+      # - name : use hugo 
+      #   run : hugo 
+      - name: use docker 
+        run : docker run --rm -v $(pwd):$(pwd) -w $(pwd) hugomods/hugo:exts hugo
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
